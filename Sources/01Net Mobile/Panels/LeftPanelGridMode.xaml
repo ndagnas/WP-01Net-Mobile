@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="NextRadio.Panels.LeftPanelGridMode"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+		xmlns:localPhoneControls="clr-namespace:System.Windows.Phone.Controls"
+		FontFamily="Segoe UI Semibold" FontSize="18" Foreground="White" mc:Ignorable="d" d:DesignHeight="900" d:DesignWidth="440" toolkit:TiltEffect.IsTiltEnabled="True">
+
+	<Grid Background="#FF31353E" Width="440">
+		<ScrollViewer>
+			<Grid>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="auto" />
+					<RowDefinition Height="*" />
+					<RowDefinition Height="auto" />
+				</Grid.RowDefinitions>
+				<toolkit:WrapPanel Grid.Row="0" Margin="0,0,4,4">
+					<localPhoneControls:FacebookTile Background="#FFB9000B" Source="/ZeroUnNet;component/Images/Icons/actuality.png" Width="432" Click="OnSectionClick" Tag="SectionType.All"        Title="TOUTE&#13;L'ACTUALITÉ"  />
+
+					<localPhoneControls:FacebookTile Background="#FF745334" Source="/ZeroUnNet;component/Images/Icons/actuality.png" Width="141" Click="OnSectionClick" Tag="SectionType.Telecoms"   Title="TÉLÉCOMS"               />
+					<localPhoneControls:FacebookTile Background="#FF20879A" Source="/ZeroUnNet;component/Images/Icons/actuality.png" Width="142" Click="OnSectionClick" Tag="SectionType.Products"   Title="PRODUITS"               />
+					<localPhoneControls:FacebookTile Background="#FF863D99" Source="/ZeroUnNet;component/Images/Icons/actuality.png" Width="141" Click="OnSectionClick" Tag="SectionType.Technology" Title="TECHNOS"                />
+					
+					<localPhoneControls:FacebookTile Background="#FF1C5186" Source="/ZeroUnNet;component/Images/Icons/actuality.png" Width="141" Click="OnSectionClick" Tag="SectionType.Apps"       Title="APPLIS,&#13;LOGICIELS"  />
+					<localPhoneControls:FacebookTile Background="#FFAA0002" Source="/ZeroUnNet;component/Images/Icons/actuality.png" Width="142" Click="OnSectionClick" Tag="SectionType.Security"   Title="SÉCURITÉ"               />
+					<localPhoneControls:FacebookTile Background="#FF560048" Source="/ZeroUnNet;component/Images/Icons/actuality.png" Width="141" Click="OnSectionClick" Tag="SectionType.Politics"   Title="POLITIQUE,&#13;DROITS"  />
+					
+					<localPhoneControls:FacebookTile Background="#FFE7741B" Source="/ZeroUnNet;component/Images/Icons/actuality.png" Width="141" Click="OnSectionClick" Tag="SectionType.Culture"    Title="CULTURE,&#13;MÉDIAS"    />
+					<localPhoneControls:FacebookTile Background="#FF99DD33" Source="/ZeroUnNet;component/Images/Icons/actuality.png" Width="142" Click="OnSectionClick" Tag="SectionType.Science"    Title="SCIENCE,&#13;RECHERCHE" />
+					<localPhoneControls:FacebookTile Background="#FF337E14" Source="/ZeroUnNet;component/Images/Icons/actuality.png" Width="141" Click="OnSectionClick" Tag="SectionType.Society"    Title="BUZZ,&#13;SOCIÉTÉ"      />
+					
+					<localPhoneControls:FacebookTile Background="#FFCCCC26" Source="/ZeroUnNet;component/Images/Icons/actuality.png" Width="141" Click="OnSectionClick" Tag="SectionType.Games"      Title="JEUX"                   />
+					<localPhoneControls:FacebookTile Background="#FF555555" Source="/ZeroUnNet;component/Images/Icons/actuality.png" Width="142" Click="OnSectionClick" Tag="SectionType.Rugby"      Title="RUGBY"                  />
+					<localPhoneControls:FacebookTile Background="#FF660022" Source="/ZeroUnNet;component/Images/Icons/actuality.png" Width="141" Click="OnSectionClick" Tag="SectionType.Tv"         Title="01NET TV"               />
+					
+					<localPhoneControls:FacebookTile Background="#FFD84182" Source="/ZeroUnNet;component/Images/Icons/bookmarks.png" Width="141" Click="OnSectionClick" Tag="SectionType.Bookmarks"  Title="MES FAVORIS"            />
+				</toolkit:WrapPanel>
+
+				<Grid x:Name="AdContainer" Grid.Row="2" Width="480" Height="80" HorizontalAlignment="Center">
+				</Grid>
+			</Grid>
+		</ScrollViewer>
+	</Grid>
+</UserControl>
